@@ -6,19 +6,25 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+a{
+    padding: 10px 50px;
+}
 a.active{
     color:rgb(61, 47, 214);
     font-weight: 600;
     border-radius: 10px;
     padding: 10px 50px;
-     background-color: rgba(136, 96, 237,0.3);
+    background-color: rgba(136, 96, 237,0.3);
+}
+@media (max-width:1024px ){
+    a.active{
+        padding: 10px 30px;
+    }
 }
 
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
-
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
     -ms-overflow-style: none;  /* IE and Edge */

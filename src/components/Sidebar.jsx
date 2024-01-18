@@ -2,31 +2,31 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 export const Sidebar = () => {
   return (
-    <div className="h-[100%-100px]  w-1/6 overflow-y-scroll scrollbar-hide bg-blue-100">
-      <div className="h-[485px]  flex flex-col gap-6 items-center py-8 ">
-        <div className="py-1 ">
+    <div className="h-[100%-100px]  w-1/6 max-lg:w-2/6 max-md:w-screen max-md:overflow-x-scroll  overflow-y-scroll scrollbar-hide ">
+      <div className="h-[485px]  flex flex-col gap-6 max-md:flex-row  max-md:h-24 max-lg:gap-4 max-md:gap-2 items-center py-8 max-lg:py-4">
+        <div className="py-1">
           <p className=" p-[10px 40px]">
             <NavLink to="/">Dashboard</NavLink>
           </p> 
         </div>
        {/* <div className="h-[.1px] w-full border-[1px] -my-4  border-gray-500"></div> */}
         <div className="py-1">
-          <p>
-            <NavLink to="/add_bus">Add bus</NavLink>
+          <p className=" ">
+            <NavLink to="/add_bus">Add Bus</NavLink>
           </p>
         </div>
         <div className="py-1">
-          <p>
-            <NavLink to="/add_driver">Add driver</NavLink>
+          <p className=" ">
+            <NavLink to="/add_driver">Add Driver</NavLink>
           </p>
         </div>
         <div className="py-1">
-          <p>
-            <NavLink to="/add_routes">Add Routes</NavLink>
+          <p className=" ">
+            <NavLink to="/add_conductor" className="active:-p-[10px 40px]">Add Conductor</NavLink>
           </p>
         </div>
         <div className="py-1">
-          <p>Add</p>
+          <p className=" "> <NavLink to="/add_routes">Add Route</NavLink></p>
         </div>
         <div className="py-1">
           <p>evbk hue</p>
